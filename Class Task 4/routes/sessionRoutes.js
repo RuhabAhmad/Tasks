@@ -1,9 +1,7 @@
-// Setting Session Data
-javascript
-
 const express = require('express');
 const router = express.Router();
 
+// Setting Session Data
 router.get('/', (req, res) => {
     req.session.name = "hello";
     req.session.ban = true;
@@ -11,10 +9,8 @@ router.get('/', (req, res) => {
 });
 
 // Retrieve session data
-javascript
-
 router.get('/sessions', (req, res) => {
-    console.log(req.session); // Logs session data to the console
+    console.log(req.session);
     res.send(`Session Data: ${JSON.stringify(req.session)}`);
 });
 
