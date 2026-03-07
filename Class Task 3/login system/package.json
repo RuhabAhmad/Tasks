@@ -1,21 +1,19 @@
 {
-  "username": "ruhab",
-  "password": "1234",
-  "name": "login-system",
+  "name": "ruhabtask",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "body-parser": "^2.2.2",
     "express": "^5.2.1",
     "express-session": "^1.19.0",
-    "mongoose": "^9.2.3"
+    "mongoose": "^9.2.4"
   }
 }
